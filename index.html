@@ -1,85 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern UI Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Modern Landing Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-gray-800">
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">MyBrand</h1>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-    <div class="max-w-7xl mx-auto px-6 py-20 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold mb-4">Build Stunning Websites Effortlessly</h1>
-      <p class="text-lg sm:text-xl mb-8">Modern UI, responsive layout, and blazing-fast performance.</p>
-      <a href="#features" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">Explore Features</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Build Fast, Beautiful Websites</h2>
+      <p>Launch your dream site with clean design, responsive layout, and stunning visuals.</p>
+      <a href="#features" class="btn-primary">Get Started</a>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section id="features" class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold">What You Get</h2>
-        <p class="text-gray-600 mt-2">Everything you need to launch your next project in style.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">⚡ Fast Load</h3>
-          <p class="text-gray-600">Optimized for performance and speed. Built for the modern web.</p>
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h3>Features You'll Love</h3>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h4>⚡ Lightning Fast</h4>
+          <p>Optimized code that loads instantly on any device.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">📱 Fully Responsive</h3>
-          <p class="text-gray-600">Looks great on all screen sizes — mobile, tablet, and desktop.</p>
+        <div class="feature-box">
+          <h4>📱 Responsive Design</h4>
+          <p>Looks great on phones, tablets, and desktops.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">🎨 Clean Design</h3>
-          <p class="text-gray-600">Minimal, elegant, and distraction-free layout for maximum impact.</p>
+        <div class="feature-box">
+          <h4>🎨 Clean Aesthetics</h4>
+          <p>Minimalistic and modern UI that users love.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold">Loved by Developers</h2>
-        <p class="text-gray-600 mt-2">See what others are saying.</p>
-      </div>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="bg-gray-100 p-6 rounded-xl shadow">
-          <p class="text-gray-700 italic">"Super clean and easy to use. My go-to template now!"</p>
-          <div class="mt-4 font-semibold">— Aishwarya S., Frontend Dev</div>
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h3>What Users Say</h3>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p>"This landing page template is stunning and easy to use!"</p>
+          <span>- Riya, Web Developer</span>
         </div>
-        <div class="bg-gray-100 p-6 rounded-xl shadow">
-          <p class="text-gray-700 italic">"Beautiful UI. Saved me hours of design time."</p>
-          <div class="mt-4 font-semibold">— Ravi K., Freelancer</div>
+        <div class="testimonial">
+          <p>"I love how clean and modern the layout feels."</p>
+          <span>- Arjun, Freelancer</span>
         </div>
-        <div class="bg-gray-100 p-6 rounded-xl shadow">
-          <p class="text-gray-700 italic">"Sleek, fast, and modern. I absolutely love it!"</p>
-          <div class="mt-4 font-semibold">— Neha P., Web Engineer</div>
+        <div class="testimonial">
+          <p>"Perfect base to build my personal website on."</p>
+          <span>- Meera, Designer</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to build something amazing?</h2>
-    <a href="#!" class="bg-white text-purple-600 font-semibold px-8 py-3 rounded-lg mt-4 inline-block hover:bg-gray-100 transition">Get Started</a>
-  </section>
-
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
-    <p>&copy; 2025 YourName. All rights reserved.</p>
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p>&copy; 2025 MyBrand. All rights reserved.</p>
+    </div>
   </footer>
-
 </body>
 </html>
